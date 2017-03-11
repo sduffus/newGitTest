@@ -1,0 +1,78 @@
+.album_cover{
+	width:25%;
+	border: 20px solid ;
+
+}
+
+.photo_list{
+	width:100%;
+	max-height:100px;
+	padding:10px;
+}
+
+.single_photo{
+	width:75%;
+}
+.col-md-1, .col-md-2, .col-md-4{
+	border:1px solid red;
+}
+
+.basic_img{
+	width:100%;
+}
+
+/* BG Video bkg Start*/
+
+video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+ background: url('///images/picture.jpg') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+.stopfade { 
+   opacity: .5;
+}
+
+@media screen and (max-width: 500px) { 
+  div{width:70%;} 
+}
+@media screen and (max-device-width: 800px) {
+  html { background: url(//images/picture.jpg) #000 no-repeat center center fixed; }
+  #bgvid { display: none; }
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }
+
+/* BG Video bkg END*/
+
+/* Img Text over BG Start*/
+
+img {
+position: absolute;
+padding-top: 300px;
+padding-right: 400px;
+padding-left: 400px;
+
+
+ 
+}
+
+   /* Img Text over BG End*/
